@@ -1,0 +1,39 @@
+# Introduction
+
+While the history of deep learning can be [traced back to 1943](https://www.dataversity.net/brief-history-deep-learning/#), it didn't become terribly useful until 2012.
+
+To understand why this is the case, we must ask three questions:
+
+1. What are neural networks?
+2. Why weren't they useful in the past?
+3. What makes them useful now?
+
+## What are neural networks?
+
+To put it in oversimplified terms, a neural network is just a recursive generalization of a Generalized Linear Model. 
+
+Lets think about simple multiple regression, with coefficients ${\beta_0}$, ${\beta_1}$, and ${\beta_2}$. In neural networks,
+coefficients are generally referred to as *weights*, but they have the same conceptual meaning as in more traditional linear models.
+
+In our model, lets supppose our weights correspond with three independant variables: $x_0$, $x_1$, and $x_2$. Most likely, our model 
+is being used to predict some real world value. 
+
+Because of this, ... "universal approximator". ... its not so much that they are difficult to interpret to interpret, its
+that interpretability is inherently not part of the model.
+
+## Why weren't they useful in the past?
+
+Lack of computation resources
+Lack of datasets
+Insufficient inductive reasoning
+
+## What makes them useful now?
+
+GPUs (Nvidia/CUDA/TPUs)
+Modern datasets
+CNNS --> Transformers
+
+## The issue in Science
+1. Interpretability
+2. Post-hoc methods vs Interpretable Architecture
+3. Inductive Reasoning

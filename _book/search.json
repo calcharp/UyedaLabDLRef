@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Uyeda Lab: An Introduction to Deep Learning",
+    "section": "",
+    "text": "Preface\nI am writing this document to serve as a quick-reference for members of Uyeda Lab who are interested in deep learning.\nI am rendering it with Quarto via JupyerLab, but you can follow along with whatever IDE you prefer. I do, however, highly recommend JupyterLab if you have only been exposed to Jupyter Notebooks. The interface is much more similar to traditional IDEs like RStudio, and I find it makes project management much more convenient.\nIf you are interested in following along with JupyterLab and don’t know how to set it up, I recommend installing Anaconda or mamba first. You may then install JupyterLab in the conda environment of your choosing.\nConda is a package management system that allows you to create environments containing Python and R packages, as well as other programs. mamba is a reimplementation of Conda in C++, and its operations have more efficient parallelization. Thus, it tends to be faster.\nIf you install Conda, you may install Anaconda or miniconda. Installing Anaconda also installs a bunch of extra Python packages that may or may not be useful for you. Therefore, it takes up alot more space on your machine. Unlike miniconda, however, Anaconda comes with Anaconda Navigator preinstalled. This is a graphical user interface that may be convenient if you are unfamiliar with Conda or are uncomfortable with command lines.\nI DO NOT recommend installing JupyterLab in the base Conda environment, as base environment installations easily lead to package conflicts. Instead, create a separate environment, activate that environment, and then install it.\nIf you are an RStudio user and prefer to use RMarkdown or Quarto in RStudio, you can evaluate Python code in cells with the Reticulate package. If you like, you can even evaluate code chunks with an existing conda environment."
+  },
+  {
+    "objectID": "intro.html#what-are-neural-networks",
+    "href": "intro.html#what-are-neural-networks",
+    "title": "1  Introduction",
+    "section": "1.1 What are neural networks?",
+    "text": "1.1 What are neural networks?\nTo put it in oversimplified terms, a neural network is just a recursive generalization of a Generalized Linear Model.\nLets think about simple multiple regression, with coefficients \\({\\beta_0}\\), \\({\\beta_1}\\), and \\({\\beta_2}\\). In neural networks, coefficients are generally referred to as weights, but they have the same conceptual meaning as in more traditional linear models.\nIn our model, lets supppose our weights correspond with three independant variables: \\(x_0\\), \\(x_1\\), and \\(x_2\\). Most likely, our model is being used to predict some real world value.\nBecause of this, … “universal approximator”. … its not so much that they are difficult to interpret to interpret, its that interpretability is inherently not part of the model."
+  },
+  {
+    "objectID": "intro.html#why-werent-they-useful-in-the-past",
+    "href": "intro.html#why-werent-they-useful-in-the-past",
+    "title": "1  Introduction",
+    "section": "1.2 Why weren’t they useful in the past?",
+    "text": "1.2 Why weren’t they useful in the past?\nLack of computation resources Lack of datasets Insufficient inductive reasoning"
+  },
+  {
+    "objectID": "intro.html#what-makes-them-useful-now",
+    "href": "intro.html#what-makes-them-useful-now",
+    "title": "1  Introduction",
+    "section": "1.3 What makes them useful now?",
+    "text": "1.3 What makes them useful now?\nGPUs (Nvidia/CUDA/TPUs) Modern datasets CNNS –> Transformers"
+  },
+  {
+    "objectID": "intro.html#the-issue-in-science",
+    "href": "intro.html#the-issue-in-science",
+    "title": "1  Introduction",
+    "section": "1.4 The issue in Science",
+    "text": "1.4 The issue in Science\n\nInterpretability\nPost-hoc methods vs Interpretable Architecture\nInductive Reasoning"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "foundations.html#backpropagation-and-gradients",
+    "href": "foundations.html#backpropagation-and-gradients",
+    "title": "3  Foundational Concepts in Deep Learning",
+    "section": "3.1 Backpropagation and Gradients",
+    "text": "3.1 Backpropagation and Gradients\n\n3.1.1 Learning Rates\n\n3.1.1.1 Learning Rate Decay"
+  },
+  {
+    "objectID": "foundations.html#optimizers",
+    "href": "foundations.html#optimizers",
+    "title": "3  Foundational Concepts in Deep Learning",
+    "section": "3.2 Optimizers",
+    "text": "3.2 Optimizers\n\n3.2.1 Stochastic Gradient Descent\n\n\n3.2.2 Adam Optimization\n\n3.2.2.1 Momentum"
+  },
+  {
+    "objectID": "foundations.html#batch-learning",
+    "href": "foundations.html#batch-learning",
+    "title": "3  Foundational Concepts in Deep Learning",
+    "section": "3.3 Batch Learning",
+    "text": "3.3 Batch Learning"
+  },
+  {
+    "objectID": "foundations.html#dropout",
+    "href": "foundations.html#dropout",
+    "title": "3  Foundational Concepts in Deep Learning",
+    "section": "3.4 Dropout",
+    "text": "3.4 Dropout"
+  },
+  {
+    "objectID": "architectures.html#understanding-architectures",
+    "href": "architectures.html#understanding-architectures",
+    "title": "4  Neural Network Architectures",
+    "section": "4.1 Understanding Architectures",
+    "text": "4.1 Understanding Architectures"
+  },
+  {
+    "objectID": "architectures.html#convolutional-networks",
+    "href": "architectures.html#convolutional-networks",
+    "title": "4  Neural Network Architectures",
+    "section": "4.2 Convolutional Networks",
+    "text": "4.2 Convolutional Networks"
+  },
+  {
+    "objectID": "architectures.html#recurrent-networks",
+    "href": "architectures.html#recurrent-networks",
+    "title": "4  Neural Network Architectures",
+    "section": "4.3 Recurrent Networks",
+    "text": "4.3 Recurrent Networks"
+  },
+  {
+    "objectID": "architectures.html#lstms-and-grus",
+    "href": "architectures.html#lstms-and-grus",
+    "title": "4  Neural Network Architectures",
+    "section": "4.4 LSTMs and GRUs",
+    "text": "4.4 LSTMs and GRUs"
+  },
+  {
+    "objectID": "architectures.html#self-attention-and-transformers",
+    "href": "architectures.html#self-attention-and-transformers",
+    "title": "4  Neural Network Architectures",
+    "section": "4.5 Self-Attention and Transformers",
+    "text": "4.5 Self-Attention and Transformers\n\n4.5.1 Axial Transformers"
+  },
+  {
+    "objectID": "torchintro.html#weve-made-it",
+    "href": "torchintro.html#weve-made-it",
+    "title": "5  Introduction to PyTorch",
+    "section": "5.1 We’ve Made It",
+    "text": "5.1 We’ve Made It\nIt’s time to learn PyTorch.\nAs of 2023, PyTorch is the most common framework for implementing deep learning models in scientific papers. It integrates naturally with other Python packages such as Numpy, Pandas, and Matplotlib, and makes backpropagation both easy to implement and flexible enough to create complex learning models.\nAs a side note, because neural networks are ultimately graphical models, I find some PyTorch concepts vaguely analogous to model implementation in RevBayes. If you are proficient in RevBayes, approaching the package with this mindset may or may not be helpful for you. Nevertheless, none of it will be very useful if you don’t understand the concepts we’ve discussed so far.\nIn this chapter, I’m to give an overview of important PyTorch concepts. We will discuss objects, modules, and functions in the packages, and finally how to combine them to train neural networks of your own. Most of the code here is either taken directly from the PyTorch documentation, or comes from this Udemy Course by Fawaz Sammani."
+  }
+]

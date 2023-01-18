@@ -1,0 +1,26 @@
+project:
+  type: book
+
+book:
+  title: "Uyeda Lab: An Introduction to Deep Learning"
+  author: "Caleb Charpentier"
+  date: "1/18/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - foundations.ipynb
+    - architectures.ipynb
+    - torchintro.ipynb
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

@@ -1,0 +1,24 @@
+# Preface {.unnumbered}
+
+I am writing this document to serve as a quick-reference for members of Uyeda Lab who are interested in deep learning.
+
+I am rendering it with Quarto via JupyerLab, but you can follow along with whatever IDE you prefer. I do, however, highly recommend 
+JupyterLab if you have only been exposed to Jupyter Notebooks. The interface is much more similar to traditional IDEs like 
+RStudio, and I find it makes project management much more convenient.
+
+If you are interested in following along with JupyterLab and don't know how to set it up, I recommend installing 
+[Anaconda](https://www.anaconda.com/products/distribution) or [mamba](https://mamba.readthedocs.io/en/latest/installation.html) 
+first. You may then install JupyterLab in the conda environment of your choosing. 
+
+[Conda](https://www.dominodatalab.com/data-science-dictionary/anaconda) is a package management system that allows you to create
+environments containing Python and R packages, as well as other programs. [mamba](https://github.com/mamba-org/mamba) is a reimplementation of Conda in C++, and its operations
+have more efficient parallelization. Thus, it tends to be faster. 
+
+If you install Conda, you may install Anaconda or [miniconda](https://docs.conda.io/en/latest/miniconda.html). Installing Anaconda also installs a bunch of extra Python packages
+that may or may not be useful for you. Therefore, it takes up alot more space on your machine. Unlike miniconda, however, Anaconda comes with Anaconda Navigator preinstalled. This is 
+a graphical user interface that may be convenient if you are unfamiliar with Conda or are uncomfortable with command lines.
+
+I DO NOT recommend installing JupyterLab in the base Conda environment, as base environment installations easily lead to package conflicts. Instead, create 
+a separate environment, activate that environment, and then install it.
+
+If you are an RStudio user and prefer to use [RMarkdown](https://rmarkdown.rstudio.com/) or [Quarto in RStudio](https://quarto.org/docs/tools/rstudio.html), you can evaluate Python code in cells with the [Reticulate](https://rstudio.github.io/reticulate/articles/r_markdown.html) package. If you like, you can even evaluate code chunks with an [existing conda environment](https://rstudio.github.io/reticulate/articles/versions.html).
